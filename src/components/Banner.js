@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "MERN Developer", "Web Developer", "Junior Front-End Developer" ];
+  const toRotate = [ "Junior MERN Developer...", "Web Developer...", "Junior Front-End Developer..." ];
   const period = 2000;
 
   useEffect(() => {
@@ -56,8 +56,8 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm George`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "MERN Developer", "Web Developer", "Junior Front-End Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Here I will insert a little paragraph with maximum 3 short sentences about me.</p>
+                <h1>{`Hi! I'm George`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Junior MERN Developer...", "Web Developer...", "Junior Front-End Developer..." ]'><span className="wrap">{text}</span></span></h1>
+                  <h3>...on an exciting journey to create web applications using the MERN stack. With some knowledge in JavaScript, I thrive in creating interactive front-end experiences while also managing data and APIs on the back end.</h3>
                   <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
