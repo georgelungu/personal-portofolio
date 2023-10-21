@@ -12,6 +12,8 @@ import ticTacToe from "../assets/img/tic-tac-toe.png"
 import airBnbClone from "../assets/img/air-bnb-clone.png"
 import shopAdmin from "../assets/img/shop-admin.png"
 import shopClient from "../assets/img/shop-client.png"
+import toDoList from "../assets/img/to-do-list.png"
+import nasaApp from "../assets/img/nasa-app.png"
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -71,14 +73,14 @@ export const Projects = () => {
   {
       title: "TO-DO List",
       description: "Front-End and Back-End Implementation",
-      imgUrl: projImg3,
-      link: "https://pokemon-app-kappa-lac.vercel.app/"
+      imgUrl: toDoList,
+      link: "https://www.google.com/"
   },
   {
     title: "NASA App",
     description: "API Call to NASA Server",
-    imgUrl: projImg1,
-    link: "https://pokemon-app-kappa-lac.vercel.app/"
+    imgUrl: nasaApp,
+    link: "https://www.google.com/"
 }
   ];
 
