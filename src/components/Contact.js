@@ -24,7 +24,7 @@ export const Contact = () => {
   }
 
   const handleSubmit = async (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     setTimeout(() => {
       setButtonText("Sending...");
     }, 0)
