@@ -21,7 +21,7 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  const projects1 = [
     {
       title: "E-commerce Shop Admin Platform",
       description: "Shop Manager and Sales Tracker",
@@ -39,7 +39,11 @@ export const Projects = () => {
       description: "Small database with search implementation.",
       imgUrl: roboFriends,
       link: "https://robo-friends-six.vercel.app/"
-  },
+  }
+];
+
+const projects2 = 
+[
   {
       title: "TIC-TAC-TOE",
       description: "Play against a friend or try your chance against AI.",
@@ -57,7 +61,11 @@ export const Projects = () => {
       description: "Contact Page",
       imgUrl: contactForm,
       link: "https://contact-form-css.vercel.app/"
-  },
+  }
+]
+
+const projects3 = 
+[
   {
       title: "MEME Generator",
       description: "MEME Database and Customization",
@@ -74,9 +82,9 @@ export const Projects = () => {
       title: "TO-DO List",
       description: "Front-End and Back-End Implementation",
       imgUrl: toDoList,
-      link: "https://www.google.com/"
-  },
-];
+      link: "https://github.com/georgelungu/to-do-app"
+  }
+]
 
   return (
     <section className="project" id="projects">
@@ -104,7 +112,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          projects1.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -116,10 +124,32 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>Page Two Projects</p>
+                    <Row>
+                        {
+                          projects2.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Page Three Projects</p>
+                    <Row>
+                        {
+                          projects3.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

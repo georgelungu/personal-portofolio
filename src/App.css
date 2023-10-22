@@ -418,13 +418,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
-  width: 400px;
-  height: 350px;
+  width: 380px;
+  height: 250px;
 }
 
 .image-card{
-  width: 400px;
-  height: 350px;
+  width: 380px;
+  height: 250px;
+}
+
+.footer-img{
+  position: relative;
+  bottom: -25px;
 }
 
 .proj-imgbx::before {
